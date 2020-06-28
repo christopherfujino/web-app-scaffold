@@ -1,1 +1,1 @@
-Usage: `docker-compose up`
+Usage: `./docker-compose up`
