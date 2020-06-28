@@ -1,0 +1,21 @@
+# Requires Docker 19.03.0+
+# https://docs.docker.com/compose/compose-file/#compose-and-docker-compatibility-matrix
+version: '3.8'
+services:
+  #server:
+  #  build:
+  #    context: ./server
+  #    dockerfile: server.Dockerfile
+  #  network_mode: "host"
+  #  volumes:
+  #    - ./server:/app
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: frontend.Dockerfile
+    environment:
+      APP_NAME: "My Great App"
+      SERVER_HOST:
+    network_mode: "host"
+    volumes:
+      - ./frontend:/app
