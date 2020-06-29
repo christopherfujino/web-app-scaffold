@@ -2,13 +2,13 @@
 # https://docs.docker.com/compose/compose-file/#compose-and-docker-compatibility-matrix
 version: '3.8'
 services:
-  #server:
-  #  build:
-  #    context: ./server
-  #    dockerfile: server.Dockerfile
-  #  network_mode: "host"
-  #  volumes:
-  #    - ./server:/app
+  server:
+    build:
+      context: ./server
+      dockerfile: server.Dockerfile
+    network_mode: "host"
+    volumes:
+      - ./server:/app
   frontend:
     build:
       context: ./frontend
