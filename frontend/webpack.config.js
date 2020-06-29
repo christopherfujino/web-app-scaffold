@@ -29,8 +29,8 @@ const exportsObject = {
       template: "./src/index.html",
     }),
     new webpack.DefinePlugin({
-      "APP_NAME": `${process.env.APP_NAME}`,
       // Use interpolation to make value a JS string
+      "APP_NAME": `"${process.env.APP_NAME}"`,
       "SERVER_HOST": `"${process.env.SERVER_HOST}"`,
     }),
   ],

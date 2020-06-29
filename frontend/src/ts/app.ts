@@ -20,7 +20,7 @@ export class App extends Component<Record<string, unknown>, State> {
     ];
     this.state = {
       "apiRoot": API_ROOT,
-      "currentRoute": "play",
+      "currentRoute": "demo",
       "error": null,
     };
   }
